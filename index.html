@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title></title>
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="styles.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<!--[if lt IE 7]>
+			<p class="browsehappy">
+				You are using an <strong>outdated</strong> browser. Please
+				<a href="#">upgrade your browser</a> to improve your experience.
+			</p>
+		<![endif]-->
+
+		<!-- Modal Open button -->
+		<div class="bg-image"></div>
+		<button id="mainBtn">
+			<p>Who's webpage is this?!</p>
+		</button>
+
+		<!-- Modal content -->
+
+		<div id="modalContainer">
+			<h6>@TheyCallMe_Prem</h1>
+			<p id="hidden-content">
+				<a href="https://twitter.com/TheyCallMe_Prem">Twitter</a> <br />
+				<a href="https://github.com/TheyCallMePrem">GitHub</a> <br />
+				<a href="https://www.linkedin.com/in/prem-desai-98ab69194/">LinkedIn</a
+				><br />
+				<a href="mailto: p.desai005@umb.edu">Send Email</a><br />
+			</p>
+			<div id="closeBtn">&times;</div>
+		</div>
+		<script>
+			document.getElementById("mainBtn").onclick = function () {
+				document.getElementById("modalContainer").style.display = "flex";
+				//document.getElementById("closeBtn").style.display = "none";
+			};
+
+			document.getElementById("closeBtn").onclick = function () {
+				document.getElementById("modalContainer").style.display = "none";
+				//document.getElementById("closeBtn").style.display = "none";
+			};
+		</script>
+	</body>
+</html>

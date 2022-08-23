@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html {
+    height: 100%;
+    font-family: 'Bebas Neue', cursive;
+
+  }
+.bg-image {
+    /* The image used */
+    background-image: url("quino-al-mBQIfKlvowM-unsplash.jpg");
+    
+    /* Add the blur effect */
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+#mainBtn{
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    width: 350px;
+    height: 80px;
+    font-size: 1.5rem;
+    background: transparent;
+    color: #ffe6c7;
+    border: solid;
+    border-radius:20px;
+    padding: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+#mainBtn:hover{
+    background-color: #ffe6c7;
+    color: #050B13;
+}
+
+/* #d8778f
+
+#1877b8 */
+
+#modalContainer{
+    color: #050B13;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: rgb(24,119,184,0.4);
+    position: fixed;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20rem;
+    height: 5rem;
+    border-radius:20px;
+    font-size: 1.1rem;
+    padding:1rem;
+    cursor: default;
+    animation-name: animate-modal;
+    animation-duration: .4s;
+}
+#closeBtn{
+    font-size: 2rem;
+    cursor: pointer;
+    transition: .5s;
+}
+
+#closeBtn:hover{
+    font-size: 4rem;
+    color: #050B13;
+    cursor: pointer;
+}
+
+a:link {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: pink;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: pink;
+    background-color: transparent;
+    text-decoration: underline;
+  }
